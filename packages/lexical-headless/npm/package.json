@@ -1,0 +1,33 @@
+{
+  "name": "@lexical/headless",
+  "description": "This package contains Headless helpers and functionality for Lexical.",
+  "keywords": [
+    "lexical",
+    "editor",
+    "rich-text",
+    "headless"
+  ],
+  "license": "MIT",
+  "version": "0.14.2",
+  "main": "LexicalHeadless.js",
+  "peerDependencies": {
+    "lexical": "0.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facebook/lexical",
+    "directory": "packages/lexical-headless"
+  },
+  "module": "LexicalHeadless.mjs",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./LexicalHeadless.mjs"
+      },
+      "require": "./LexicalHeadless.js"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "lexical",
+  "description": "Lexical is an extensible text editor framework that provides excellent reliability, accessible and performance.",
+  "keywords": [
+    "react",
+    "lexical",
+    "editor",
+    "contenteditable",
+    "rich-text"
+  ],
+  "license": "MIT",
+  "version": "0.14.2",
+  "main": "Lexical.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facebook/lexical",
+    "directory": "packages/lexical"
+  },
+  "module": "Lexical.mjs",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./Lexical.mjs"
+      },
+      "require": "./Lexical.js"
+    }
+  }
+}

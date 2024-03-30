@@ -1,0 +1,36 @@
+{
+  "name": "@lexical/link",
+  "description": "This package contains the functionality for Lexical links.",
+  "keywords": [
+    "lexical",
+    "editor",
+    "rich-text",
+    "link"
+  ],
+  "license": "MIT",
+  "version": "0.14.2",
+  "main": "LexicalLink.js",
+  "peerDependencies": {
+    "lexical": "0.14.2"
+  },
+  "dependencies": {
+    "@lexical/utils": "0.14.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facebook/lexical",
+    "directory": "packages/lexical-link"
+  },
+  "module": "LexicalLink.mjs",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./LexicalLink.mjs"
+      },
+      "require": "./LexicalLink.js"
+    }
+  }
+}
