@@ -17,5 +17,15 @@
     "directory": "packages/lexical"
   },
   "module": "Lexical.mjs",
-  "sideEffects": false
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./Lexical.mjs"
+      },
+      "require": "./Lexical.js"
+    }
+  }
 }

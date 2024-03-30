@@ -17,5 +17,6 @@
     "url": "https://github.com/facebook/lexical",
     "directory": "packages/shared"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "type": "module"
 }

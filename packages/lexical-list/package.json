@@ -22,5 +22,15 @@
     "directory": "packages/lexical-list"
   },
   "module": "LexicalList.mjs",
-  "sideEffects": false
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./LexicalList.mjs"
+      },
+      "require": "./LexicalList.js"
+    }
+  }
 }

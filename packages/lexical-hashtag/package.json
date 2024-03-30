@@ -22,5 +22,15 @@
     "directory": "packages/lexical-hashtag"
   },
   "module": "LexicalHashtag.mjs",
-  "sideEffects": false
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./LexicalHashtag.mjs"
+      },
+      "require": "./LexicalHashtag.js"
+    }
+  }
 }

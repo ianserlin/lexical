@@ -42,5 +42,6 @@
     "vite": "^2.9.16",
     "vite-plugin-replace": "0.1.1"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "type": "module"
 }

@@ -22,5 +22,15 @@
     "directory": "packages/lexical-history"
   },
   "module": "LexicalHistory.mjs",
-  "sideEffects": false
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./LexicalHistory.mjs"
+      },
+      "require": "./LexicalHistory.js"
+    }
+  }
 }

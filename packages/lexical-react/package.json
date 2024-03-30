@@ -601,5 +601,6 @@
       "require": "./useLexicalTextEntity.js"
     }
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "type": "module"
 }

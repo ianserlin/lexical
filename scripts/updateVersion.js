@@ -74,8 +74,22 @@ function updateModule(packageJSON, pkg) {
   if (packageJSON.sideEffects === undefined) {
     packageJSON.sideEffects = false;
   }
+  if (packageJSON.type === undefined) {
+    packageJSON.type = 'module';
+  }
   if (packageJSON.main) {
     packageJSON.module = withEsmExtension(packageJSON.main);
+    packageJSON.exports = {
+      '.': {
+        import: {
+          types: `./index.d.ts`,
+          // webpack requires default to be the last entry per #5731
+          // eslint-disable-next-line sort-keys-fix/sort-keys-fix
+          default: `./${withEsmExtension(packageJSON.main)}`,
+        },
+        require: `./${packageJSON.main}`,
+      },
+    };
   } else if (fs.existsSync(`./packages/${pkg}/dist`)) {
     const exports = {};
     for (const file of fs.readdirSync(`./packages/${pkg}/dist`)) {

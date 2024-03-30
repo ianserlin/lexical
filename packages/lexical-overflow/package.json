@@ -19,5 +19,15 @@
     "directory": "packages/lexical-overflow"
   },
   "module": "LexicalOverflow.mjs",
-  "sideEffects": false
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./LexicalOverflow.mjs"
+      },
+      "require": "./LexicalOverflow.js"
+    }
+  }
 }

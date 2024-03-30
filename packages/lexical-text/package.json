@@ -20,5 +20,15 @@
     "directory": "packages/lexical-text"
   },
   "module": "LexicalText.mjs",
-  "sideEffects": false
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./LexicalText.mjs"
+      },
+      "require": "./LexicalText.js"
+    }
+  }
 }

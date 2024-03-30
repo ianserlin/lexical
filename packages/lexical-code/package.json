@@ -26,5 +26,15 @@
     "@types/prismjs": "^1.26.0"
   },
   "module": "LexicalCode.mjs",
-  "sideEffects": false
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./LexicalCode.mjs"
+      },
+      "require": "./LexicalCode.js"
+    }
+  }
 }

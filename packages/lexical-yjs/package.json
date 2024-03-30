@@ -26,5 +26,15 @@
     "directory": "packages/lexical-yjs"
   },
   "module": "LexicalYjs.mjs",
-  "sideEffects": false
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./LexicalYjs.mjs"
+      },
+      "require": "./LexicalYjs.js"
+    }
+  }
 }

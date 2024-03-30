@@ -22,5 +22,15 @@
     "directory": "packages/lexical-mark"
   },
   "module": "LexicalMark.mjs",
-  "sideEffects": false
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./LexicalMark.mjs"
+      },
+      "require": "./LexicalMark.js"
+    }
+  }
 }
