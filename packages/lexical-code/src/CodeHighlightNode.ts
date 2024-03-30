@@ -17,20 +17,20 @@ import type {
   TabNode,
 } from 'lexical';
 
-import 'prismjs/components/prism-clike';
-import 'prismjs/components/prism-javascript';
-import 'prismjs/components/prism-markup';
-import 'prismjs/components/prism-markdown';
-import 'prismjs/components/prism-c';
-import 'prismjs/components/prism-css';
-import 'prismjs/components/prism-objectivec';
-import 'prismjs/components/prism-sql';
-import 'prismjs/components/prism-python';
-import 'prismjs/components/prism-rust';
-import 'prismjs/components/prism-swift';
-import 'prismjs/components/prism-typescript';
-import 'prismjs/components/prism-java';
-import 'prismjs/components/prism-cpp';
+import 'prismjs/components/prism-clike.js';
+import 'prismjs/components/prism-javascript.js';
+import 'prismjs/components/prism-markup.js';
+import 'prismjs/components/prism-markdown.js';
+import 'prismjs/components/prism-c.js';
+import 'prismjs/components/prism-css.js';
+import 'prismjs/components/prism-objectivec.js';
+import 'prismjs/components/prism-sql.js';
+import 'prismjs/components/prism-python.js';
+import 'prismjs/components/prism-rust.js';
+import 'prismjs/components/prism-swift.js';
+import 'prismjs/components/prism-typescript.js';
+import 'prismjs/components/prism-java.js';
+import 'prismjs/components/prism-cpp.js';
 
 import {
   addClassNamesToElement,
